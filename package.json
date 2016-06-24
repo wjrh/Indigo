@@ -1,0 +1,23 @@
+{
+  "name": "Indigo",
+  "version": "0.0.1",
+  "description": "An interface for Teal",
+  "main": "app.js",
+  "author": "Renan Dincer",
+  "license": "CC0-1.0",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/wjrh/Cerulean.git"
+  },
+  "devDependencies":{
+    "electron-prebuilt": "^1.2.0"
+  },
+  "dependencies":
+  { 
+    "angular": "1.5.7",
+    "angular-resource":"1.5.7"
+  }
+}

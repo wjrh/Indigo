@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Indigo</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/photon.min.css">
+
+    <!-- Javascript -->
+    <script src="js/menu.js" charset="utf-8"></script>
+    <script src="js/indigo.js" charset="utf-8"></script>
+
+  </head>
+  <body ng-app="indigo" ng-controller='programsController'>
+    <div class="window">
+
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Indigo</h1>
+      </header>
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane pane-sm sidebar">
+            <ul class="list-group">
+              <li class="list-group-header">
+                <input class="form-control" type="text" ng-model="searchText" placeholder="Search">
+              </li>
+
+              <li class="list-group-item" ng-repeat="program in programs | orderBy:'name' | filter:searchText" class="list-group-item" ng-click="setCurrentProgram(program)"
+              >
+                <img class="media-object pull-left" src="{{getImgurThumbnail(program.image)}}" width="32" height="32">
+
+                <div class="media-body">
+                  <strong>{{program.name}}</strong>
+                  <p>{{program.author}}</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="pane">
+            {{ currentProgram.name | uppercase }}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
