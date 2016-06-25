@@ -10,6 +10,7 @@ menu.append(new MenuItem({
     alert('Deleted')
   }
 }))
+
 menu.append(new MenuItem({
   label: 'More Info...',
   click: function() {

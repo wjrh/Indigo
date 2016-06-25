@@ -27,7 +27,7 @@ app.on('ready', function() {
     minWidth: 800,
     minHeight: 500,
     acceptFirstMouse: true,
-    titleBarStyle: 'hidden'
+    movable: true
   });
 
   // and load the index.html of the app.

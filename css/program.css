@@ -1,0 +1,43 @@
+.episode-timer {
+	margin: 0;
+  padding: 0;
+  height: 80px;
+  min-width: 100%;
+  width: 100%;
+  background-color: #e8e6e8;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.episode-timer-numbers {
+	text-align: center;
+	font-size:50px;
+	font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+}
+
+.program-name{
+	margin-top: 10px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.start-episode{
+	display: block;
+	margin: 10px auto 10px  auto;
+}
+
+.no-current-program{
+	min-width: 100%;
+	min-height: 100%;
+	height: 100%;
+	background-color: #e8e6e8;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.select-episode{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
