@@ -13,7 +13,7 @@ indigo.controller('programsController', function ($http, $scope, $resource) {
 
 		if ($scope.currentProgram != null){
 			//if there is already a program selected
-			dialog.showErrorBox("Episode in progress", "A program is already selected. Either end or delete the episode at hand to select an other Program.");
+			dialog.showErrorBox("Episode in progress", "A program is already selected. Either end or delete the episode at hand to create an episode of " + program.name + ".");
 			return;
 		}
 		var choice = dialog.showMessageBox({

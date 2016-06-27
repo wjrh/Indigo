@@ -44,13 +44,16 @@
               <div class="episode-timer">
                 <div class="episode-timer-numbers">0:00:00</div>
               </div>
+
+              <span class="icon icon-record" style="color:#34c84a"></span><h5>Ready to begin episode</h5>
+              
               <p>{{ currentProgram.name }}
               <button class="start-episode btn btn-large btn-default">Start Episode</button>
               <button class="start-episode btn btn-large btn-negative" ng-click="deleteEpisode()">Delete Episode</button>
             </div>
 
             <div class="no-current-program select-episode" ng-hide="currentProgram">
-              <p>Select your program to start</p>
+              <h5>Select your program to start</h5>
             </div>
           </div>
           
