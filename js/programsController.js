@@ -10,15 +10,13 @@ indigo.controller('programsController', function ($http, $scope, $resource) {
 	$scope.programs = OrgProgram.query();
 
 	$scope.selectProgram = function(program){
-
+		
 		if ($scope.currentProgram != null){
 			//if there is already a program selected
 			dialog.showErrorBox("Episode in progress", "A program is already selected. Either end or delete the episode at hand to create an episode of " + program.name + ".");
 			return;
 		}
 		
-	 	//set the current program into not null so that when the dialog is shown, another dialog is not queued underneath, but instead an error is show. 
-		$scope.currentProgram = "something";
 
 		var choice = dialog.showMessageBox({
 			type: "question",
